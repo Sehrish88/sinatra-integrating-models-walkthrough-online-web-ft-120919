@@ -11,7 +11,6 @@ class App < Sinatra::Base
     #binding.pry 
   text_from_user = params[:user_text]
   @analyzed_text = TextAnalyzer.new(text_from_user)
-  binding.pry 
   erb :results
 end
 end
